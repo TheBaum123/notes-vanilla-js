@@ -1,0 +1,29 @@
+body {
+    background-color: black;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#textbox {
+    color: white;
+    font-size: 5vh;
+    text-align: center;
+}
+
+@keyframes blink {
+    0% { transform: scaleY(100%); }
+    50% { transform: scaleY(0%); }
+    100% { transform: scaleY(100%); }
+}
+
+#cursor {
+    background-color: white;
+    height: 5vh;
+    width: 10px;
+    display: inline-block;
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s;
+}
