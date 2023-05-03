@@ -12,7 +12,8 @@ document.addEventListener("keydown", (e) => {
             textbox.innerHTML = ""
         }
     } else if(e.key == " ") {
-        const inputtoadd = document.createTextNode(" ")
+        const inputtoadd = document.createElement("span")
+        inputtoadd.innerText = " "
         textbox.appendChild(inputtoadd)
     } else if(e.key.length == 1) {
         const spanthing = document.createElement("span")
